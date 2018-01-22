@@ -1,0 +1,306 @@
+\documentclass[12pt,]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=0.9in]{geometry}
+\usepackage[unicode=true]{hyperref}
+\PassOptionsToPackage{usenames,dvipsnames}{color} % color is loaded by hyperref
+\hypersetup{
+            pdftitle={Game Design Pitch},
+            colorlinks=true,
+            linkcolor=Maroon,
+            citecolor=blue,
+            urlcolor=blue,
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{natbib}
+\bibliographystyle{plainnat}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+
+% Stuff I added.
+% --------------
+
+\usepackage{indentfirst}
+\usepackage[doublespacing]{setspace}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{layout}   
+\lhead{\sc Galloping Wheelbarrows}
+\chead{}
+\rhead{\thepage}
+\lfoot{}
+\cfoot{}
+\rfoot{}
+
+\renewcommand{\headrulewidth}{0.0pt}
+\renewcommand{\footrulewidth}{0.0pt}
+
+\usepackage{sectsty}
+\sectionfont{\centering}
+\subsectionfont{\centering}
+
+\newtheorem{hypothesis}{Hypothesis}
+
+% Begin document
+% --------------
+
+\begin{document}
+
+\doublespacing
+
+\begin{titlepage}
+    \begin{center}
+    \line(1,0){300} \\ 
+    [0.25in]
+    \huge{\bfseries Game Design Pitch} \\
+    [2mm]
+    \line(1,0){200} \\
+    [1.5cm] 
+    \textsc{\Large Galloping Wheelbarrows} \\
+    [0.75cm]
+    \textsc{\Large Can you deliver the dirt on time?} \\
+    [9cm]
+    \end{center}
+    
+    \begin{flushright}
+    \textsc{\Large{Gurpreet Singh \\}\normalsize\emph{\ January 21, 2018 \\}\normalsize\emph{CS4483 \#250674134 \\} }
+    
+    \end{flushright}
+    
+\end{titlepage}
+
+\newpage
+
+\hypertarget{premise}{%
+\subsection{Premise}\label{premise}}
+
+The game will be an addictive 2D speed-based platform game and will
+focus on fast moving action and racing. The characters is the game are
+different types of wheelbarrows and the story revolves around delivering
+precious dirt to the destination on time. The game will require fast
+reactions and button spamming to win races. Single and multi-player game
+modes will be available.
+
+\hypertarget{player-motivation}{%
+\subsection{Player Motivation}\label{player-motivation}}
+
+The player will be driven to achieve the fastest record time on a map
+and beat his peers in multi-player mode by mastering new techniques and
+reacting faster to the changing map conditions. As the player progresses
+they will unlock new maps but the basic movement techniques will remain
+the same. The player just becomes better at incorporating them into
+their play style to move faster.
+
+The story mode of the game provides a timed challenge for the user to
+complete and increases the number of different maps a player can play.
+The story is also meant to be comedy so the player will have a good time
+discovering what will happen next.
+
+\hypertarget{genre}{%
+\subsection{Genre}\label{genre}}
+
+The genres for the game are speed-based, action, platformer and will be
+played on the PC platform. Galloping Wheelbarrows will be following most
+conventional game mechanics for these genres. One aspect that isn't seen
+in other platformers is that it will be impossible to miss a platform,
+and instead of having to aim for a platform, the user will have to
+adjust their direction of travel to match where the next platform is
+going to maintain momentum.
+
+For example, one platform could be leading the player in the right
+direction but then theres a loop into a jump and the next platform leads
+left. If the user doesn't change their direction from right to left,
+they will loss all their speed upon landing on the next platform
+
+\hypertarget{gameplay}{%
+\subsection{Gameplay}\label{gameplay}}
+
+\hypertarget{gamemodes}{%
+\subsubsection{Gamemodes}\label{gamemodes}}
+
+In single player mode the player will try to get to the end of the map
+in the least amount of time and in multi-player mode the player can race
+against other players. The game will be played on a map per map basis
+with a menu screen in between to switch between maps and progress in the
+story.
+
+\hypertarget{maps}{%
+\subsubsection{Maps}\label{maps}}
+
+A map will consist of a series of platforms going from the start of the
+race to the end of a race. Some platforms may be reused but there will
+always be one clear direction for the user to travel. Each platform will
+direct the player in either the left or right direction. Each platform
+can also have special qualities like speed increasing platforms,
+inclined/declined platforms, and platforms that don't allow tricks on
+them.
+
+\hypertarget{player-controls}{%
+\subsubsection{Player Controls}\label{player-controls}}
+
+The player will use the left and right arrow keys to pick a direction to
+move the player. Other controls include U to jump, E to flip right, O to
+flip left, and A to do a spin. These controls will be re-bindable in the
+settings menu and new controls may be added later in development to
+include a wider range of tricks. When the player holds either left or
+right the character slowly increases in speed the longer the key is
+being held and the visual model of a wheelbarrow will show this by
+increasingly leaning forward the longer the key is held.
+
+\hypertarget{playing-a-round}{%
+\subsubsection{Playing a Round}\label{playing-a-round}}
+
+In each round of the game the user (a wheelbarrow) will be placed in the
+center of the screen and the round will begin with a countdown. When the
+countdown ends the user will be allowed the move the character and begin
+racing from platform to platform and doing tricks to gain speed.
+
+Each time the character successfully lands a trick, it gains a boost in
+momentum. Chaining multiple tricks together without messing up will
+allow for the fastest traversal through the map. In order to achieve
+this the user will have to know or predict the map correctly because
+tricks can be disrupted by certain platforms or increase/decreases in
+elevation.
+
+There is a stopwatch in the top right corner of the screen showing the
+player how long they have taken to complete the map and if there are
+multiple laps or not.
+
+\hypertarget{movement-tricks}{%
+\subsubsection{Movement Tricks}\label{movement-tricks}}
+
+The player can use the flip keys or spin key to do a trick while they
+are in the air. In order to gain a momentum boost from the trick, the
+character has to land at the correct angle. For example if the character
+is moving right, and does a front flip, the wheelbarrow has to be
+leaning rightward to gain a momentum boost. If the wheelbarrow is
+leaning backward the character will bounce and lose speed.
+
+\hypertarget{competitive-analysis}{%
+\subsection{Competitive Analysis}\label{competitive-analysis}}
+
+Other games that operate with similar mechanics are Sonic the Hedgehog,
+Freedom Planet and Uniracers. Uniracers is a direct competitor but is an
+old game that has no chance of recreation. Freedom Planet and Sonic the
+Hedgehog are not the same concept but target similar markets so they can
+also be considered competition.
+
+Sonic the Hedgehog popularized this play style but used it in more of
+roleplaying fashion instead of racing. Freedom Planet expanded and
+improved upon some of Sonic's best gameplay aspects but it remained
+fundamentally the same in terms of gameplay. These games didn't utilize
+the concept of doing tricks to gain more speed in the same way that
+Galloping Wheelbarrows will and therefore they are fundamentally
+different.
+
+A major pro for these games is their's impressive map design and level
+music. Those qualities will be very difficult to beat. A major con is
+the lack of advanced movement mechanics in both games. Galloping
+Wheelbarrows will be adding lots of complexity to movement and therefore
+increase the skill ceiling.
+
+Uniracers is a SNES game from 1994 that has similar movement mechanics
+as Galloping Wheelbarrows but encountered a lawsuit from Pixar due to
+graphics and therefore is no longer available to the mass audience.
+Although, the general concept is similar, it has a very limited set of
+tricks and characters that I would like to expand upon with Galloping
+Wheelbarrows. It also does not have a story.
+
+\hypertarget{unique-selling-proposition-usp}{%
+\subsection{Unique Selling Proposition
+(USP)}\label{unique-selling-proposition-usp}}
+
+The concept of a fast paced wheelbarrow racing game has not been created
+yet and I think there is a lot of potential to use this unusual
+combination to appeal to gamers. The simple and unrestrictive game
+mechanics of Galloping Wheelbarrows allows users to endlessly master and
+exploit the maps to traverse them at insanely fast speeds.
+
+This game will stand out from other retro games due to it's high skill
+ceiling caused by advanced movement mechanics and funny story to ease
+the player into the gameplay.
+
+\hypertarget{story-synopsis}{%
+\subsection{Story Synopsis}\label{story-synopsis}}
+
+Galloping Wheelbarrows is not heavily based around the story therefore
+it takes this opportunity to have a funny narrative before a map round
+starts. The narrator takes the player through a story of how a boy needs
+to deliver a wheelbarrow full of dirt to his father before nightfall.
+That boy has a magic wheelbarrow that can do tricks and go very fast.
+Then a game round starts with a wheelbarrow full of dirt and instead of
+the usual stopwatch, a timer is started and the user must deliver the
+dirt before the timer goes to zero. The main character is the
+wheelbarrow and his name is Martin.
+
+\hypertarget{target-market}{%
+\subsection{Target Market}\label{target-market}}
+
+The target market for this game would be PC gamers who enjoy retro style
+games. People who have played uniracers in their childhood would really
+enjoy this game as a modern evolution of that concept with good
+graphics. The target demographic would be people old enough to have
+played Uniracers on SNES but it wouldn't be restricted to that because
+the game would be fun even if you didn't recognize it's predecessor
+game. The game would aim to be ESRB rated E for Everyone.
+
+\hypertarget{target-platform}{%
+\subsection{Target Platform}\label{target-platform}}
+
+Galloping Wheelbarrows will be created primarily for the GNU/Linux
+platform and if possible later expanded to Windows. It will aim to
+require very little hardware requirements and use minimal dependencies
+to allow the most people to play it without difficulty.
+
+\hypertarget{summary}{%
+\subsection{Summary}\label{summary}}
+
+In conclusion Galloping Wheelbarrows will be a game that makes many
+people happy and endlessly challenge their quick thinking skills.
+
+\end{document}
+
