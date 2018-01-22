@@ -1,0 +1,62 @@
+---
+output: 
+  pdf_document:
+    citation_package: natbib
+    toc: false
+    number_sections: false
+    keep_tex: true
+    fig_caption: true
+    template: ../../Research/templates/gsingh-basic.tex
+title: "Game Design Pitch"
+subtitle: "uni"
+subsubtitle: "worlds fastest black unicycle"
+
+runhead: "catch me if you can"
+author:
+- name: Gurpreet Singh
+  affiliation: CS4483
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+geometry: margin=1in
+fontsize: 11pt
+indent: yes
+colorlinks: true
+---
+
+## Premise
+The game will be an addictive 2D speed-based platform game and will focus on
+fast moving action and racing. In single player mode the player will try to get
+to the end of the map in the least amount of time. In multiplayer mode the
+player can race against other players. The game will require fast reactions 
+and button spamming to win races.
+
+## Player Motivation
+The player will be driven to achieve the fastest record time on a map and beat
+his peers in multiplayer mode by mastering new techniques and reacting faster
+to the changing map conditions. As the player progresses they will unlock new
+maps but the basic movement techniques will remain the same. The player just
+becomes better at incorporating them into their play style to move faster.
+
+## Genre
+
+The genre of the game is 2D speed-based action game. 
+
+## Competitive Analysis
+
+## Unique Selling Proposition (USP)
+
+What makes this game Unique?
+
+Why is it special?
+
+Distingishing characteristics?
+
+## Gameplay
+
+## Story Synopsis
+
+## Target Market
+
+## Target Platform
+
+## Summary
+
